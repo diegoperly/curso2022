@@ -1,0 +1,155 @@
+/* *{
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+} */
+
+/* RESET */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+img,
+strong,
+u,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+article,
+aside, 
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+time,
+audio,
+video{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  line-height:1;
+}
+ol, 
+ul,
+li{list-style:none;}
+strong{font-family:Arial, Helvetica, sans-serif;}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+  width:100%;
+}
+img{width:100%;}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+
+/* 
+NOVOS SELETORES CSS
+ - ELEMENTO;
+ - CLASSE;
+ - ID;
+ - AGRUPAMENTO;
+ - DESCENDENTE.
+*/
+/* PSEUDO-CLASSES */
+li:hover{ /* QUANDO PASSO O MOUSE EM CIMA */
+    color:#900;
+    font-size:25px;
+}
+ul li:first-child{ /* PRIMEIRO FILHO */
+    font-size:30px;
+}
+ul li:last-child{ /* ÚLTIMO FILHO */
+    background:#990;
+}
+ul li:nth-child(2){ /* FILHO ESPECÍFICO. TAMBÉM POSSO DECLARAR ODD OU EVEN (ÍMPAR OU PAR) */
+    background:#099;
+}
+input{
+    border:1px solid #000;
+    padding:10px;
+    margin:10px;
+}
+input:focus{ /* QUANDO O ELEMENTO ENTRA EM FOCO. */
+    border-color:#900;
+}
+
+/* PSEUDO-ELEMENTO */
+li::after{
+    content:" teste";
+}
+li::before{
+    content:"";
+    width:16px;
+    height:16px;
+    display:block;
+    background:url(../Imagens/Logos/favicon.png);
+}
+
+/* SELETORES AVANÇADOS */
+ul > li > a{color:#990} /* SELETOR DE ELEMENTO FILHO */
+input[type="text"]{background:#900;} /* SELETOR DE ATRIBUTO */
+p ~ p{color:#909;}
+
+/* body{
+    overflow:hidden;
+} */
+.box1{
+    width:300px;
+    height:200px;
+    background:#ccc;
+    /* OVERFLOW É NOME DADO A ÁREA ALÉM DOS LIMITES DO BOX, E PODEMOS MANIPULAR SEU COMPORTAMENTO ATRAVÉS DA PROPRIEDADE OVERFLOW. PODEMOS ATRIBUIR SCROLL OU HIDDEN PRINCIPALMENTE. */
+    overflow:scroll;
+    /* CURSOR MANIPULA O PONTEIRO DO MOUSE QUANDO O USUÁRIO PASSA O MOUSE SOBRE ESTE ELEMENTO. */
+    cursor:pointer;
+}
+.box1:hover{
+    background:#099;
+}
+
+.box2{
+    width:400px;
+    height:350px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}

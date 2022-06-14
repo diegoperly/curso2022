@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elementos Visuais de Site</title>
+
+        <!-- FAVICON - 16x16 PIXELS -->
+        <link rel="icon" href="Imagens/Logos/favicon.png">
+    </head>
+    <body>
+        <!-- TAG AUDIO -->
+        <audio src="Enough - NEFFEX.mp3" autoplay controls loop preload></audio>
+        <br>
+
+        <!-- TAG VIDEO -->
+        <video src="Design sem nome.mp4" autoplay controls loop preload></video>
+        <br>
+
+        <!-- IFRAMES -->
+        <iframe src="http://www.codeblue.com.br" width="500" height="800"></iframe>
+        <br>
+
+        <!-- YOUTUBE -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/e2RByvB8600" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+
+        <!-- GOOGLE MAPS -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28822.79874868665!2d-49.26452661603806!3d-25.443283162052097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4ff6c236d65%3A0xdcb9bf3363daa784!2sJardim%20Bot%C3%A2nico%2C%20Curitiba%20-%20PR%2C%2082590-300!5e0!3m2!1spt-BR!2sbr!4v1652746812981!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- TABELAS - USADAS ATÉ HOJE PARA DADOS TABULARES, MAS NÃO PARA ESTRUTURAÇÃO DE LAYOUT. PARA ESTRUTURAÇÃO DE LAYOUT USAMOS TABLELESS - TÉCNICA DE CSS PARA ESTRUTURAÇÃO DE LAYOUTS SEM TABELAS. -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th scope="col">Carro</th><th scope="col">Ano</th><th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gol</td><td>1997</td><td>R$ 8.000,00</td>
+                </tr>
+                <tr>
+                    <td>Celta</td><td>2003</td><td>R$ 11.000,00</td>
+                </tr>
+                <tr>
+                    <td>Uno</td><td>2010</td><td>R$ 13.000,00</td>
+                </tr>
+                <tr>
+                    <td>Fusca</td><td>1968</td><td>R$ 5.000,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total:</td><td>R$ 37.000,00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- 
+            BOAS PRÁTICAS SOBRE IMAGENS:
+            - ACESSIBILIDADE - SEMPRE DEVEMOS DEFINIR O ALT DAS IMAGENS COM UM VALOR COM UMA DESCRIÇÃO BREVE DO QUE ESTÁ ACONTECENDO NA IMAGEM, OU DA INFORMAÇÃO QUE ELA CONTÉM, PARA DEFINIENTES VISUAIS.
+            - SEO - SEMPRE DEFINIR O ALT DAS IMAGENS TAMBÉM AJUDA MUITO NO SEO.
+            - PERFORMANCE - IMAGENS PENSAM MUITO. SEMPRE DEVEMOS COMPACTAR ANTES DE INSERIR NO SITE. VOCÊ NÃO DEVE ESCALONAR IMAGENS VIA CÓDIGO.
+        -->
+        <figure>
+            <img src="Imagens/Fotos/imagem8.jpg" alt="Duas mulher profissionais explicam em um quadro um conteúdo para um homem." width="1000" height="667" loading="lazy">
+            <figcaption>Foto: João da Silva</figcaption>
+        </figure>
+
+    </body>
+</html>

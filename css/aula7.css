@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+}
+body{
+    font:14px Arial, Helvetica, sans-serif;
+    color:#333;
+}
+.box1{
+    width:200px;
+    height:150px;
+    background:#ccc;
+}
+.container{
+    width:1200px;
+    background:#aaa;
+    margin:0 auto;
+}
+
+
+
+/*
+HERANÇA
+ALGUMAS PROPRIEDADES DO CSS SÃO HERDÁVEIS (inherit), PRINCIPALMENTE AS PROPRIEDADES DE TEXTO.
+*/
+
+body{
+    color:#900;
+}
+
+h1{
+    color:#090;
+}
+
+span{
+    color:#009;
+}
+
+/* UM LINK SÓ ESTILIZA SE A GENTE ATACAR DIRETAMENTE A TAG "A" */
+h2 a{
+    color:#990;
+}
+
+.chuchu .teste .exemplo p{font-weight:normal;} /* FORÇA 31 */
+
+/* 
+REGRAS DO EFEITO CASCATA (É O CRITÉRIO DE DESEMPATE DO CSS, OU SEJA, QUANDO DUAS REGRAS CSS ESTILIZAM O MESMO ELEMENTO, O EFEITO CASCATA POSSUI UMA HIERARQUIA PARA DESEMPATAR E SOMENTE UM DELES ESTILIZAR O ELEMENTO).
+1- TIPO DE CSS (INLINE, INCORPORADO OU LINKADO);
+2- ESPECIFICIDADE (QUANTO MAIS ESPECÍFICO, MAIS FORTE);
+3- FORÇA DO SELETOR
+4- LOCAL DO ESTILO (QUEM ESTIVER MAIS EMBAIXO É MAIS FORTE)
+*/
+
+body.site .imagem{font-weight:bold;} /* FORÇA 21 */

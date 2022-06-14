@@ -1,0 +1,178 @@
+/* RESET */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+img,
+strong,
+u,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+article,
+aside, 
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+time,
+audio,
+video{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1;
+}
+ol, 
+ul,
+li{list-style:none;}
+strong{font-weight:bold;}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+  width:100%;
+}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+
+/* TOPO */
+h1{
+    text-align:center;
+    margin:15px 0 14px;
+}
+
+/* CONTEÚDO HOME */
+.banner-principal{margin-bottom:96px;}
+.banner-principal img{width:100%;}
+.container{
+    width:1136px;
+    margin:0 auto;
+}
+.artigo{
+    margin-bottom:96px;
+    display:flex;
+}
+.artigo1 figure{margin-right:48px;}
+.artigo h2{
+    font:700 48px Arial, Helvetica, sans-serif;
+    margin-bottom:16px;
+    width:80%;
+}
+.artigo1 h2{
+    margin-top:46px;
+}
+.artigo p{
+    color:#4D4D4D;
+    line-height:25px;
+    width:67%;
+    letter-spacing: 0.04em;
+}
+.artigo2 article{
+    margin-left:48px;
+}
+.artigo2 p{
+    width:65%;
+}
+.conheca{margin-bottom:96px;}
+.conheca h3{
+    margin:32px 0;
+    text-align:center;
+    font-size:40px;
+    line-height:54px;
+}
+.conheca section{
+    display:flex;
+    margin:0 88px;
+    justify-content:space-between;
+    text-align:center;
+}
+.conheca p{
+    margin-top:16px;
+    line-height:24px;
+    letter-spacing: 0.04em;
+}
+.conheca strong{
+    display:block;
+}
+.conheca a{
+    color:#FF651A;
+    text-decoration:underline;
+}
+
+/* RECEITAS */
+.receita1{
+    background:#F4DCC3;
+    padding:40px 0;
+}
+.receita2{
+    background:#E8E7C1;
+    padding:40px 0;
+}
+.receita .container > article{
+    display:flex;
+    gap:48px;
+    padding-bottom:40px;
+}
+.receita h2{
+    font:700 40px/54px Arial, Helvetica, sans-serif;
+    margin:32px 0 16px;
+}
+.receita p{
+    color:#4D4D4D;
+    line-height:24px;
+    width:80%;
+    margin-bottom:24px;
+    letter-spacing: 0.04em;
+}
+.receita h3{
+    text-align:center;
+    font-size:24px;
+    margin:32px 0;
+}
+.dica{
+    padding-top:24px;
+}
+.dica p{
+    width:91%;
+}
+.dica p:first-child{margin-top:48px;}

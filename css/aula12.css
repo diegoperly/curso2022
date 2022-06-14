@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+}
+
+/* REVISÃO DE CONTAINER */
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+.topo{
+    background:#900;
+}
+
+/* DISPLAY */
+/* DISPLAY MUDA O COMPORTAMENTO PADRÃO DAQUELE TIPO DE ELEMENTO HTML. */
+.d-box2 a{
+    display:block;
+    padding:10px 40px;
+    text-decoration:none;
+}
+
+/* DISPLAY:INLINE-BLOCK */
+.d-box{
+    background:#333;
+}
+.d-box1{
+    width:200px;
+    height:100px;
+    background:#090;
+}
+.d-box2{
+    width:250px;
+    height:130px;
+    background:#009;
+}
+.d-box1,
+.d-box2{
+    display:inline-block;
+    vertical-align:top;
+}
+
+/* FLEX */
+/* FLEX PERMITE QUE OS ELEMENTOS FILHOS DAQUELE ELEMENTO ONDE O FLEX FOI ATRIBUIDO FIQUEM UM DO LADO OUTRO. */
+.f-box{
+    background:#999;
+    margin-top:50px;
+    display:flex; /* O FLEX POR PADRÃO MUDA O TAMANHO DOS SEUS FILHOS PARA CABER. */
+    flex-wrap:wrap; /* FAZ COM QUE OS ELEMENTOS FILHOS MANTENHAM SEU TAMANHO. */
+    justify-content:space-between; /* ALINHAMENTO HORIZONTAL */
+    align-items:center; /* ALINHAMENTO VERTICAL */
+    gap:10px; /* ESPAÇAMENTO ENTRE OS FILHOS */
+}
+.f-box1{
+    width:230px;
+    height:150px;
+    background:#990;
+}
+.f-box2{
+    width:120px;
+    height:200px;
+    background:#099;
+}
+.box1{order:7;}
+.box2{order:10;}
+.box3{order:1;}
+.box4{order:2;}
+.box5{order:8;}
+.box6{order:5;}
+.box7{order:3;}
+.box8{order:9;}
+.box9{order:4;}
+.box10{order:6;}
+
+/* GRID */
+/* MAIS UMA TÉCNICA DE TABLELESS, QUE PODERIA SER UTILIZADA PARA ESTRUTURAR O SITE INTEIRO, MAS GERALMENTE USAMOS PARA MOSAICOS */
+.g-box{
+    background:#ccc;
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.g-box1{
+    width:150px;
+    height:200px;
+    background:#909;
+}
+.g-box2{
+    width:300px;
+    height:150px;
+    background:#900;
+}

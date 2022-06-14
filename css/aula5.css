@@ -1,0 +1,44 @@
+h1{
+    text-align:center;
+}
+h3{
+    color:#900;
+    font:bold small-caps 20px Arial, Helvetica, sans-serif;
+}
+p{
+    font:14px/20px Georgia, 'Times New Roman', Times, serif;
+    color:#333;
+    text-indent:20px;
+}
+figure{
+    /* text-align:center; */
+}
+li{
+    font:14px/20px Georgia, 'Times New Roman', Times, serif;
+    color:#333;
+    /*
+    list-style-type:circle; 
+    list-style-image:url(../Imagens/Logos/favicon.png);
+    list-style-position:inside;
+    */
+    list-style:inside url(../Imagens/Logos/favicon.png);
+}
+h2{
+    font:bold 40px Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+}
+h4{
+    font:bold 30px Arial, Helvetica, sans-serif;
+}
+th{
+    font:normal 14px/20px Georgia, 'Times New Roman', Times, serif;
+    color:#333;
+    text-align:left;
+}
+td{
+    font:14px/20px Georgia, 'Times New Roman', Times, serif;
+    color:#333;
+}
+figcaption{
+    text-align:center;
+}

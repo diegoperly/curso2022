@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+}
+
+body{
+    background-image:url(../Imagens/Fotos/imagem4.jpg);
+    background-repeat:no-repeat;
+    background-position:200px 200px;
+    background-attachment:fixed;
+}
+
+/* NÃO ESQUEÇA: TODO ELEMENTO DE BLOCO (BLOCK) JÁ TEM WIDTH:100% POR PADRÃO. */
+.box1{
+    width:200px; /* LARGURA DO BOX. SE USAR UMA UNIDADE DE MEDIDA ABSOLUTA (PX), PODEMOS CHAMAR ISSO DE LARGURA FIXA. SE EU USAR UMA UNIDADE DE MEDIDA RELATIVA (%), PODEMOS CHAMAR DE LARGURA FLUÍDA. */
+    height:300px; /* ALTURA DO BOX. DIEGO NÃO É MUITO FÃ. EM MUITOS CASOS NÃO É NECESSÁRIO DEFINIR, DEIXANDO COM QUE O PRÓPRIO CONTEÚDO AUMENTE A ALTURA DO BOX. */
+
+    /* 
+    EXISTEM VARIAÇÕES DE WIDTH E HEIGHT:
+    - min-width:...;
+    - min-height:...;
+    - max-width:...;
+    - max-height:...;
+    */
+
+    /* 
+    MARGIN:
+    MARGEM É O ESPAÇAMENTO EXTERNO DO BOX. GERALMENTE USADO PARA EMPURRAR OUTROS ELEMENTOS.
+
+    MARGIN DECLARADA PARA CADA LADO:
+    margin-top:20px;
+    margin-left:30px;
+    margin-right:10px;
+    margin-bottom:35px;
+
+    MARGIN COM 4 EIXOS. SEGUE O SENTIDO DOS PONTEIROS DO RELÓGIO (TOP | RIGHT | BOTTOM | LEFT):
+    margin:20px 10px 35px 30px;
+
+    MARGIN COM 3 EIXOS (TOP | LEFT E RIGHT | BOTTOM)
+    margin:20px 30px 35px;
+
+    MARGIN COM 2 EIXOS (TOP E BOTTOM | LEFT E RIGHT)
+    margin:20px 40px;
+
+    MARGIN COM 1 EIXO (OS QUATRO LADOS RECEBEM O MESMO ESPAÇAMENTO EXTERNO)
+    margin:30px;
+    */
+    margin:0 auto; /* CENTRALIZA UM ELEMENTO DE BLOCO QUE TENHA LARGURA FIXA */
+
+    /* 
+    PADDING: 
+    PADDING É O ESPAÇAMENTO INTERNO DO BOX. TODAS AS VARIAÇÕES QUE APRENDEMOS PARA MARGIN VALE TAMBÉM PARA PADDING. AUMENTA O TAMANHO DO BOX.
+    */
+    padding:10px;
+
+    /* 
+    BORDER:
+    CRIA UMA BORDA NO BOX. PODE SER LEFT, RIGHT, BOTTOM E/OU TOP. TEM 3 VALORES, TAMANHO, ESTILO E COR. TAMBÉM AUMENTA O TAMANHO DO BOX.
+    */
+    border:10px solid #090;
+
+    /* 
+    FAZ COM QUE O PADDING E BORDER NÃO AUMENTE MAIS O TAMANHO DO BOX: 
+    box-sizing:border-box;
+    */
+
+    /* 
+    BACKGROUND:
+    MUDA O FUNDO DO BOX.
+    background-color:#099;
+    background-image:url(../Imagens/Logos/favicon.png);
+    background-repeat:no-repeat;
+    background-position:50px 50px;
+
+    PODE SER AGRUPADO EM QUALQUER ORDEM.
+    */
+    background:url(../Imagens/Logos/favicon.png) no-repeat 50px 50px #099;
+}
+
+.box2{
+    width:300px;
+    height:400px;
+    background:#090;
+}
+
+.parallax{
+    height:300px;
+    background:url(../Imagens/Fotos/imagem9.jpg) no-repeat top left fixed transparent;
+}

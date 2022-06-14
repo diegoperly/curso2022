@@ -1,0 +1,48 @@
+/* ASSIM QUE FAZ COMENTÁRIOS NO CSS */
+
+/* !IMPORTANT QUEBRA A HIERARQUIA CSS. SÓ USE EM CASOS DE EMERGÊNCIA. */
+
+/* 
+    SINTAXE CSS:
+    SELETOR{
+        PROPRIEDADE:VALOR;
+    }
+*/
+
+/* 
+    MINI AULA DE BYTE
+    BIT = 0 - 1
+    BYTE = 01001110
+    256 COMBINAÇÕES POSSÍVEIS DESDE O 00000000 ATÉ O 11111111
+
+    MINI AULA DE PIXEL
+    1 PIXEL = RGB
+    256 RED | 256 GREEN | 256 BLUE
+    256 AO CUBO = 16.777.216 DE CORES
+
+    MINI AULA DE CORES
+    NO CSS EXISTEM 4 FORMAS DE ESCOLHER A COR DE ALGO:
+    - O NOME DA COR EM INGLÊS
+    - RGB(R,G,B) VARIANDO DE ZERO A 255
+    - RGBA(R,G,B,ALFA) ONDE ALFA VARIA ENTRE 0 E 1
+    - HEXADECIMAL
+*/
+h1{
+    color:#F93 !important; /* COR DA LETRA */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* MUDA O TIPO DA LETRA */
+    font-size:20px; /* TAMANHO DA LETRA */
+    /* NO CSS SEMPRE QUE HOUVER UM VALOR NUMÉRICO EU TENHO QUE DEFINIR A UNIDADE DE MEDIDA. */
+    font-weight:normal; /* NEGRITO. NORMAL TIRA. */
+    font-style:italic; /* ITÁLICO. POUCO USADO. */
+    font-variant:small-caps; /* VERSALETE. SUPER POUCO USADO. */
+}
+
+h2{
+    font:normal italic 30px/50px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* AGRUPAMENTO DAS PROPRIEDADES "FONT". REGRAS PARA QUE O AGRUPAMENTO DA PROPRIEDADE FONT FUNCIONE: 1- TEM QUE ESTAR NA ORDEM CERTA [ESTILOS] [TAMANHO*] [FONTE*]. 2- TAMANHO DA LETRA E TIPO DA LETRA É OBRIGATÓRIO. SE EU QUISER POSSO AGRUPAR LINE-HEIGHT JUNTO COM O TAMANHO DE LETRA, SEPARADO POR BARRA. */
+    /* line-height:50px;  ESPAÇAMENTO ENTRE LINHAS. */
+    text-align:left; /* ALINHAMENTO DE TEXTO. */
+    text-decoration:underline; /* SUBLINHADO OU TAXADO. */
+    text-transform:capitalize; /* MUDA A CAIXA DO TEXTO. */
+    text-indent:50px; /* ESPAÇAMENTO DE PARÁGRAFO. POUCO USADO. */
+    letter-spacing:10px; /* ESPAÇAMENTO ENTRE LETRAS. */
+}
